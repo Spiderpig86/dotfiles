@@ -1,0 +1,13 @@
+{
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 80,
+    "editor.rulers": [
+        80
+    ],
+    "workbench.colorTheme": "Material Theme",
+    "workbench.iconTheme": "material-icon-theme",
+    "typescript.check.tscVersion": false,
+    "editor.renderWhitespace": "boundary",
+    "git.autofetch": false,
+    "extensions.ignoreRecommendations": false
+}
