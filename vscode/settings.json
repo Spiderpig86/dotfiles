@@ -1,13 +1,27 @@
+// Place your settings in this file to overwrite the default settings
 {
     "editor.wordWrap": "on",
     "editor.wordWrapColumn": 80,
     "editor.rulers": [
         80
     ],
-    "workbench.colorTheme": "Material Theme",
+    "workbench.colorTheme": "Atom One Dark",
     "workbench.iconTheme": "material-icon-theme",
     "typescript.check.tscVersion": false,
     "editor.renderWhitespace": "boundary",
     "git.autofetch": false,
-    "extensions.ignoreRecommendations": false
+    "extensions.ignoreRecommendations": false,
+    "sync.gist": "99bfed2ab48d5f9b672dc11f096a9ad1",
+    "sync.lastUpload": "2018-01-16T17:25:32.938Z",
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastDownload": "",
+    "sync.forceDownload": false,
+    "sync.anonymousGist": false,
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    "dayNightThemeSwitcher.nightTheme": "Atom One Dark",
+    "dayNightThemeSwitcher.dayTheme": "Solarized Light"
 }
