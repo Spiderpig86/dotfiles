@@ -1,4 +1,4 @@
-// -- hyper-stylesheet-hash:e32ff30bdca5a83851f2963667b0c6f6 --
+// -- hyper-stylesheet-hash:5cf0adf2bb9a1ade1d398ffc51eb4bcd --
 // Future versions of Hyper may add additional config options,
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
@@ -111,10 +111,6 @@ module.exports = {
     // bellSoundURL: 'http://example.com/bell.mp3',
 
     // for advanced config flags please refer to https://hyper.is/#cfg
-
-    hypercwd: {
-      initialWorkingDirectory: '~/Desktop'
-    }
   },
 
   // a list of plugins to fetch and install from npm
@@ -129,7 +125,8 @@ module.exports = {
     'hyper-arc-dark-controls', // Try to match my linux theme
     'hyperline',
     'hyperlinks',
-    // 'hyperterm-tabs', // high CPU usage
+    // 'hyper-tabs-enhanced', // high CPU usage
+    'hyperterm-tabs',
     'hypercwd',
     'hyper-stylesheet',
   ],
