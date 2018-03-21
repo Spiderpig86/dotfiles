@@ -3,6 +3,11 @@
 .hyperline_line {
     bottom: 6px !important;
     margin: auto !important;
+    margin-top: 20px;
+}
+
+.header_appTitle {
+    font-size: 13px;
 }
 
 /* #terminal */

@@ -1,4 +1,4 @@
-// -- hyper-stylesheet-hash:715e3d1ff23eb42e75f80b1aea6e4bf8 --
+// -- hyper-stylesheet-hash:e32ff30bdca5a83851f2963667b0c6f6 --
 // Future versions of Hyper may add additional config options,
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
@@ -28,7 +28,7 @@ module.exports = {
     foregroundColor: '#fff',
 
     // terminal background color
-    backgroundColor: '#000',
+    // backgroundColor: '#000',
 
     // border color (window, tabs)
     borderColor: '#333',
@@ -52,7 +52,7 @@ module.exports = {
     showWindowControls: '',
 
     // custom padding (css format, i.e.: `top right bottom left`)
-    padding: '12px 14px',
+    padding: '.5rem .5rem 1.3rem .5rem',
 
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
@@ -124,7 +124,7 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    'hyper-atom-dark',
+    'hyperterm-atom-dark',
     'hyper-dark-scrollbar',
     'hyper-arc-dark-controls', // Try to match my linux theme
     'hyperline',
