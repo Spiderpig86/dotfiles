@@ -122,10 +122,10 @@ module.exports = {
   plugins: [
     'hyperterm-atom-dark',
     'hyper-dark-scrollbar',
-    'hyper-arc-dark-controls', // Try to match my linux theme
+    // 'hyper-arc-dark-controls', // Try to match my linux theme
     'hyperline',
     'hyperlinks',
-    // 'hyper-tabs-enhanced', // high CPU usage
+    'hyper-tabs-enhanced', // high CPU usage
     'hyperterm-tabs',
     'hypercwd',
     'hyper-stylesheet',
