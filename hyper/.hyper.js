@@ -1,4 +1,4 @@
-// -- hyper-stylesheet-hash:5cf0adf2bb9a1ade1d398ffc51eb4bcd --
+// -- hyper-stylesheet-hash:5e26772dece60263157cbe023079ecc2 --
 // Future versions of Hyper may add additional config options,
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
@@ -16,7 +16,7 @@ module.exports = {
     fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgba(248,28,229,0.8)',
+    cursorColor: 'rgba(191, 133, 227, 0.8)',
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: 'BLOCK',
@@ -25,7 +25,7 @@ module.exports = {
     cursorBlink: false,
 
     // color of the text
-    foregroundColor: '#fff',
+    foregroundColor: '#54667b',
 
     // terminal background color
     // backgroundColor: '#000',
@@ -57,24 +57,24 @@ module.exports = {
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
     // an array here instead of a color map object
-    // colors: {
-    //   black: '#000000',
-    //   red: '#ff0000',
-    //   green: '#33ff00',
-    //   yellow: '#ffff00',
-    //   blue: '#0066ff',
-    //   magenta: '#cc00ff',
-    //   cyan: '#00ffff',
-    //   white: '#d0d0d0',
-    //   lightBlack: '#808080',
-    //   lightRed: '#ff0000',
-    //   lightGreen: '#33ff00',
-    //   lightYellow: '#ffff00',
-    //   lightBlue: '#0066ff',
-    //   lightMagenta: '#cc00ff',
-    //   lightCyan: '#00ffff',
-    //   lightWhite: '#ffffff'
-    // },
+    colors: {
+      // black: '#000000',
+      // red: '#ff0000',
+      // green: '#33ff00',
+      // yellow: '#ffff00',
+      // blue: '#0066ff',
+      // magenta: '#cc00ff',
+      // cyan: '#00ffff',
+      // white: '#d0d0d0',
+      // lightBlack: '#808080',
+      // lightRed: '#ff0000',
+      // lightGreen: '#33ff00',
+      // lightYellow: '#ffff00',
+      // lightBlue: '#0066ff',
+      // lightMagenta: '#cc00ff',
+      // lightCyan: '#00ffff',
+      // lightWhite: '#ffffff'
+    },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
     // if left empty, your system's login shell will be used by default
@@ -111,6 +111,11 @@ module.exports = {
     // bellSoundURL: 'http://example.com/bell.mp3',
 
     // for advanced config flags please refer to https://hyper.is/#cfg
+
+    hyperTabs: {
+      tabIconsColored: true,
+      closeAlign: 'right',
+    }
   },
 
   // a list of plugins to fetch and install from npm
@@ -120,14 +125,16 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    'hyperterm-atom-dark',
+    // 'hyperterm-atom-dark',
+    // 'hyper-chesterish',
+    'hyper-nord',
     'hyper-dark-scrollbar',
     // 'hyper-arc-dark-controls', // Try to match my linux theme
     'hyperline',
     'hyperlinks',
     'hyper-tabs-enhanced', // high CPU usage
     'hyperterm-tabs',
-    'hypercwd',
+    // 'hypercwd',
     'hyper-stylesheet',
   ],
 
