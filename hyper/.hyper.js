@@ -13,7 +13,7 @@ module.exports = {
     fontSize: 14,
 
     // font family with optional fallbacks
-    fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: '"Noto Mono for Powerline", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'rgba(191, 133, 227, 0.8)',
@@ -58,22 +58,22 @@ module.exports = {
     // including the 6 x 6 color cubes and the grayscale map, just provide
     // an array here instead of a color map object
     colors: {
-      // black: '#000000',
-      // red: '#ff0000',
-      // green: '#33ff00',
-      // yellow: '#ffff00',
-      // blue: '#0066ff',
-      // magenta: '#cc00ff',
-      // cyan: '#00ffff',
-      // white: '#d0d0d0',
-      // lightBlack: '#808080',
-      // lightRed: '#ff0000',
-      // lightGreen: '#33ff00',
-      // lightYellow: '#ffff00',
-      // lightBlue: '#0066ff',
-      // lightMagenta: '#cc00ff',
-      // lightCyan: '#00ffff',
-      // lightWhite: '#ffffff'
+        lightBlack:     '#586e75',
+        black:          '#073642',
+        lightGreen:     '#ffd454',
+        lightYellow:    '#657b83',
+        lightBlue:      '#839496',
+        lightCyan:      '#285151',
+        white:          '#59450b',
+        lightWhite:     '#59450b',
+        yellow:         '#b58900',
+        lightRed:       '#cb4b16',
+        red:            '#dc322f',
+        magenta:        '#d33682',
+        lightMagenta:   '#6c71c4',
+        blue:           '#268bd2',
+        cyan:           '#2aa198',
+        green:          '#d7ef39'
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
@@ -127,7 +127,8 @@ module.exports = {
   plugins: [
     // 'hyperterm-atom-dark',
     // 'hyper-chesterish',
-    'hyper-nord',
+    // 'hyper-nord',
+    'hyper-solarized-dark',
     'hyper-dark-scrollbar',
     // 'hyper-arc-dark-controls', // Try to match my linux theme
     'hyperline',
