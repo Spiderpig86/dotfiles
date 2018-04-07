@@ -23,5 +23,21 @@
     "sync.quietSync": false,
     "sync.askGistName": false,
     "dayNightThemeSwitcher.nightTheme": "Atom One Dark",
-    "dayNightThemeSwitcher.dayTheme": "Solarized Light"
+    "dayNightThemeSwitcher.dayTheme": "Solarized Light",
+    "extensions.autoUpdate": false,
+
+    "editor.tokenColorCustomizations": {
+        "[Nord]": { // Nord devs really should update the foreground color of comments
+            "comments": {
+                "foreground": "#839aa5",
+            }
+        }
+    },
+    "[html]": {
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        }
+    },
 }
