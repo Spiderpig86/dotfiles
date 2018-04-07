@@ -23,7 +23,7 @@
     "sync.quietSync": false,
     "sync.askGistName": false,
     "dayNightThemeSwitcher.nightTheme": "Atom One Dark",
-    "dayNightThemeSwitcher.dayTheme": "Solarized Light"
+    "dayNightThemeSwitcher.dayTheme": "Solarized Light",
     "extensions.autoUpdate": false,
 
     "editor.tokenColorCustomizations": {
