@@ -1,4 +1,4 @@
-// -- hyper-stylesheet-hash:5e26772dece60263157cbe023079ecc2 --
+// -- hyper-stylesheet-hash:36450936f3c16fb0d874ee43eddaa01b --
 // Future versions of Hyper may add additional config options,
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
@@ -16,7 +16,7 @@ module.exports = {
     fontFamily: '"Noto Mono for Powerline", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgba(191, 133, 227, 0.8)',
+    cursorColor: 'rgba(181, 137, 0, 0.6)',
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: 'BLOCK',
@@ -25,10 +25,10 @@ module.exports = {
     cursorBlink: false,
 
     // color of the text
-    foregroundColor: '#54667b',
+    foregroundColor: '#76b1ae',
 
     // terminal background color
-    // backgroundColor: '#000',
+    backgroundColor: '#002b36',
 
     // border color (window, tabs)
     borderColor: '#333',
@@ -40,7 +40,7 @@ module.exports = {
     css: '',
 
     // custom css to embed in the terminal window
-    termCSS: '',
+    termCSS: 'x-row { line-height: 1rem; }',
 
     // set to `true` (without backticks) if you're using a Linux setup that doesn't show native menus
     // default: `false` on Linux, `true` on Windows (ignored on macOS)
@@ -58,22 +58,22 @@ module.exports = {
     // including the 6 x 6 color cubes and the grayscale map, just provide
     // an array here instead of a color map object
     colors: {
-        lightBlack:     '#586e75',
-        black:          '#073642',
-        lightGreen:     '#ffd454',
-        lightYellow:    '#657b83',
-        lightBlue:      '#839496',
-        lightCyan:      '#285151',
-        white:          '#59450b',
-        lightWhite:     '#59450b',
-        yellow:         '#b58900',
-        lightRed:       '#cb4b16',
-        red:            '#dc322f',
-        magenta:        '#d33682',
-        lightMagenta:   '#6c71c4',
-        blue:           '#268bd2',
-        cyan:           '#2aa198',
-        green:          '#d7ef39'
+      lightBlack:     '#586e75',
+      black:          '#073642',
+      lightGreen:     '#ffd454',
+      lightYellow:    '#657b83',
+      lightBlue:      '#76b1ae',
+      lightCyan:      '#285151',
+      white:          '#59450b',
+      lightWhite:     '#59450b',
+      yellow:         '#b58900',
+      lightRed:       '#cb4b16',
+      red:            '#dc322f',
+      magenta:        '#d33682',
+      lightMagenta:   '#6c71c4',
+      blue:           '#268bd2',
+      cyan:           '#2aa198',
+      green:          '#d7ef39'
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
@@ -128,7 +128,7 @@ module.exports = {
     // 'hyperterm-atom-dark',
     // 'hyper-chesterish',
     // 'hyper-nord',
-    'hyper-solarized-dark',
+    // 'hyper-solarized-dark',
     'hyper-dark-scrollbar',
     // 'hyper-arc-dark-controls', // Try to match my linux theme
     'hyperline',
