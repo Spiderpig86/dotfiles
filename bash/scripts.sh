@@ -7,24 +7,24 @@
 # Go up N directories
 function up() {
     LIMIT=$1 # Number of dirs to go up is first arg
-    P=$(printf %q $(pwd)) # Get current dir with escaped spaces
+    P=$(printf %q "$(pwd)") # Get current dir with escaped spaces
     for ((i=1; i<=LIMIT; i++))
     do
-        P=$P/..
+        P=$(printf %q "$(pwd)/../")
     done
-    cd $P # Change dir
-    export MPWD=$P
+    eval cd "$P" # Change dir
+    export MPWD="$P"
 }
 
 # Go back to previous dir
 function back() {
     LIMIT=$1
-    P=$(printf %q $(mpwd))
+    P=$(printf %q "$(mpwd)")
     for ((i=1; i <= LIMIT; i++))
     do
-        P=${P%/..}
+        P="${P%/..}"
     done
-    cd $P
+    eval cd $P
     export MPWD=$P
 }
 
