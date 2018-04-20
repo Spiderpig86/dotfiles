@@ -13,10 +13,10 @@ module.exports = {
     fontSize: 14,
 
     // font family with optional fallbacks
-    fontFamily: '"Noto Mono for Powerline", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: '"Inconsolata Nerd Font Complete Windows Compatible", "Noto Mono for Powerline", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgba(181, 137, 0, 0.6)',
+    // cursorColor: 'rgba(181, 137, 0, 0.6)',
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: 'BLOCK',
@@ -28,7 +28,7 @@ module.exports = {
     foregroundColor: '#76b1ae',
 
     // terminal background color
-    backgroundColor: '#002b36',
+    // backgroundColor: '#002b36',
 
     // border color (window, tabs)
     borderColor: '#333',
@@ -57,24 +57,24 @@ module.exports = {
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
     // an array here instead of a color map object
-    colors: {
-      lightBlack:     '#586e75',
-      black:          '#073642',
-      lightGreen:     '#ffd454',
-      lightYellow:    '#657b83',
-      lightBlue:      '#76b1ae',
-      lightCyan:      '#285151',
-      white:          '#59450b',
-      lightWhite:     '#59450b',
-      yellow:         '#b58900',
-      lightRed:       '#cb4b16',
-      red:            '#dc322f',
-      magenta:        '#d33682',
-      lightMagenta:   '#6c71c4',
-      blue:           '#268bd2',
-      cyan:           '#2aa198',
-      green:          '#d7ef39'
-    },
+    // colors: {
+    //   lightBlack:     '#586e75',
+    //   black:          '#073642',
+    //   lightGreen:     '#ffd454',
+    //   lightYellow:    '#657b83',
+    //   lightBlue:      '#76b1ae',
+    //   lightCyan:      '#285151',
+    //   white:          '#59450b',
+    //   lightWhite:     '#59450b',
+    //   yellow:         '#b58900',
+    //   lightRed:       '#cb4b16',
+    //   red:            '#dc322f',
+    //   magenta:        '#d33682',
+    //   lightMagenta:   '#6c71c4',
+    //   blue:           '#268bd2',
+    //   cyan:           '#2aa198',
+    //   green:          '#d7ef39'
+    // },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
     // if left empty, your system's login shell will be used by default
@@ -129,6 +129,7 @@ module.exports = {
     // 'hyper-chesterish',
     // 'hyper-nord',
     // 'hyper-solarized-dark',
+    'hyper-nord',
     'hyper-dark-scrollbar',
     // 'hyper-arc-dark-controls', // Try to match my linux theme
     'hyperline',
