@@ -8,6 +8,7 @@
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #POWERLEVEL9K_MODE='awesome-patched'
+#POWERLEVEL9K_MODE='nerdfont-complete'
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 POWERLEVEL9K_DISABLE_RPROMPT=false
@@ -15,11 +16,38 @@ POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="▶ "
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
 
-POWERLEVEL9K_CUSTOM_ICON="echo @"
+POWERLEVEL9K_CUSTOM_ICON="echo λ"
 POWERLEVEL9K_CUSTOM_ICON_BACKGROUND=069
 POWERLEVEL9K_CUSTOM_ICON_FOREGROUND=015
 
+
+# Custom directory function that helps with dir collapsing
+spwd() {
+    paths=(${(s:/:)PWD})
+
+    cur_path='/'
+    cur_short_path='/'
+    for directory in ${paths[@]}
+    do
+        cur_dir=''
+        for (( i=0; i<${#directory}; i++ )); do
+            cur_dir+="${directory:$i:1}"
+            matching=("$cur_path"/"$cur_dir"*/)
+            if [[ ${#matching[@]} -eq 1 ]]; then
+                break
+            fi
+        done
+        cur_short_path+="$cur_dir/"
+        cur_path+="$directory/"
+    done
+
+    printf %q "${cur_short_path: : -1}"
+    echo
+}
+
+#POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_icon context dir)
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_icon context dir vcs)
 
 # Set list of themes to load
@@ -57,7 +85,7 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_icon context dir vcs)
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+ DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -72,7 +100,8 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_icon context dir vcs)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
+  #git
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -105,3 +134,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias desktopdir='cd /mnt/c/Users/slim1/Desktop'
+alias githubdir='cd /mnt/c/Users/slim1/Desktop/Github\ Projects'
