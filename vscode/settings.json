@@ -3,9 +3,9 @@
     "editor.wordWrap": "on",
     "editor.wordWrapColumn": 80,
     "editor.rulers": [
-        80
+        125
     ],
-    "workbench.colorTheme": "Atom One Dark",
+    "workbench.colorTheme": "Cobalt2",
     "workbench.iconTheme": "material-icon-theme",
     "typescript.check.tscVersion": false,
     "editor.renderWhitespace": "boundary",
@@ -22,9 +22,12 @@
     "sync.pathPrefix": "",
     "sync.quietSync": false,
     "sync.askGistName": false,
-    "dayNightThemeSwitcher.nightTheme": "Atom One Dark",
+    "dayNightThemeSwitcher.nightTheme": "Nord",
     "dayNightThemeSwitcher.dayTheme": "Solarized Light",
     "extensions.autoUpdate": false,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 20,
 
     "editor.tokenColorCustomizations": {
         "[Nord]": { // Nord devs really should update the foreground color of comments
@@ -40,4 +43,8 @@
             "strings": true
         }
     },
+    // "terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\bash.exe",
+    "editor.fontSize": 14,
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "'Noto Mono for Powerline'"
 }
