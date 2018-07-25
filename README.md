@@ -28,4 +28,4 @@ A small opinionated list of dot files used to set up my apps.
         ```
 ### Styling
 * When using hyperline, scrollbars tend to appear since the plugin itself takes up too much space.
-* Make sure to install **hyper-stylesheet* and include `.hyper.css` in your user folder.
+* Make sure to install *hyper-stylesheet* and include `.hyper.css` in your user folder.

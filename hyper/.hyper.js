@@ -37,14 +37,14 @@ module.exports = {
     windowSize: [1200, 600],
 
     // custom css to embed in the main window
-    css: '',
+    css: ``,
 
     // custom css to embed in the terminal window
     termCSS: '',
 
     // set to `true` (without backticks) if you're using a Linux setup that doesn't show native menus
     // default: `false` on Linux, `true` on Windows (ignored on macOS)
-    showHamburgerMenu: '',
+    showHamburgerMenu: 'true',
 
     // set to `false` if you want to hide the minimize, maximize and close buttons
     // additionally, set to `'left'` if you want them on the left, like in Ubuntu
@@ -52,7 +52,7 @@ module.exports = {
     showWindowControls: '',
 
     // custom padding (css format, i.e.: `top right bottom left`)
-    padding: '.5rem .5rem 1.3rem .5rem',
+    padding: '.5rem',
 
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
@@ -133,6 +133,7 @@ module.exports = {
     'hyper-dark-scrollbar',
     // 'hyper-arc-dark-controls', // Try to match my linux theme
     // 'hyperline',
+    'hyper-statusline',
     'hyperlinks',
     'hyper-tabs-enhanced', // high CPU usage
     'hyperterm-tabs',
