@@ -6,7 +6,7 @@ alias pip='pip3'
 # Some shortcuts
 alias vimrc='vim ~/.vimrc'
 alias bashrc='vim ~/.bashrc'
-alias reload='vim ~/.bashrc'
+alias reload='source ~/.bashrc'
 
 # Server init
 alias pythonserver='python -m SimpleHTPSever 8000'

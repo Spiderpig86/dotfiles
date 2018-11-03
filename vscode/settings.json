@@ -11,7 +11,6 @@
     "editor.renderWhitespace": "boundary",
     "git.autofetch": false,
     "extensions.ignoreRecommendations": false,
-    "sync.gist": "99bfed2ab48d5f9b672dc11f096a9ad1",
     "sync.lastUpload": "2018-01-16T17:25:32.938Z",
     "sync.autoDownload": false,
     "sync.autoUpload": false,
@@ -46,5 +45,6 @@
     // "terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\bash.exe",
     "editor.fontSize": 14,
     "terminal.integrated.fontSize": 14,
-    "terminal.integrated.fontFamily": "'Noto Mono for Powerline'"
+    "terminal.integrated.fontFamily": "'Noto Mono for Powerline'",
+    "window.titleBarStyle": "custom"
 }
