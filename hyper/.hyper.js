@@ -25,10 +25,10 @@ module.exports = {
     cursorBlink: false,
 
     // color of the text
-    foregroundColor: '#76b1ae',
+    foregroundColor: '#fff',
 
     // terminal background color
-    backgroundColor: '#002b36',
+    // backgroundColor: '#002b36',
 
     // border color (window, tabs)
     borderColor: '#333',
@@ -37,14 +37,14 @@ module.exports = {
     windowSize: [1200, 600],
 
     // custom css to embed in the main window
-    css: ``,
+    css: '',
 
     // custom css to embed in the terminal window
     termCSS: '',
 
     // set to `true` (without backticks) if you're using a Linux setup that doesn't show native menus
     // default: `false` on Linux, `true` on Windows (ignored on macOS)
-    showHamburgerMenu: 'true',
+    showHamburgerMenu: '',
 
     // set to `false` if you want to hide the minimize, maximize and close buttons
     // additionally, set to `'left'` if you want them on the left, like in Ubuntu
@@ -52,29 +52,29 @@ module.exports = {
     showWindowControls: '',
 
     // custom padding (css format, i.e.: `top right bottom left`)
-    padding: '.5rem',
+    padding: '.5rem .5rem 1.3rem .5rem',
 
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
     // an array here instead of a color map object
-    colors: {
-      lightBlack:     '#586e75',
-      black:          '#073642',
-      lightGreen:     '#ffd454',
-      lightYellow:    '#657b83',
-      lightBlue:      '#76b1ae',
-      lightCyan:      '#285151',
-      white:          '#59450b',
-      lightWhite:     '#59450b',
-      yellow:         '#b58900',
-      lightRed:       '#cb4b16',
-      red:            '#dc322f',
-      magenta:        '#d33682',
-      lightMagenta:   '#6c71c4',
-      blue:           '#268bd2',
-      cyan:           '#2aa198',
-      green:          '#d7ef39'
-    },
+    // colors: {
+    //   lightBlack:     '#586e75',
+    //   black:          '#073642',
+    //   lightGreen:     '#ffd454',
+    //   lightYellow:    '#657b83',
+    //   lightBlue:      '#76b1ae',
+    //   lightCyan:      '#285151',
+    //   white:          '#59450b',
+    //   lightWhite:     '#59450b',
+    //   yellow:         '#b58900',
+    //   lightRed:       '#cb4b16',
+    //   red:            '#dc322f',
+    //   magenta:        '#d33682',
+    //   lightMagenta:   '#6c71c4',
+    //   blue:           '#268bd2',
+    //   cyan:           '#2aa198',
+    //   green:          '#d7ef39'
+    // },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
     // if left empty, your system's login shell will be used by default
@@ -115,7 +115,11 @@ module.exports = {
     hyperTabs: {
       tabIconsColored: true,
       closeAlign: 'right',
-    }
+    },
+    opacity: {
+      focus: 0.95,
+      blur: 0.55
+    },
   },
 
   // a list of plugins to fetch and install from npm
@@ -129,16 +133,17 @@ module.exports = {
     // 'hyper-chesterish',
     // 'hyper-solarized-dark',
     // 'hyper-nord',
-    // 'hyper-electron-highlighter',
+    'hyper-electron-highlighter',
+    // 'hyper-firewatch',
     'hyper-dark-scrollbar',
     // 'hyper-arc-dark-controls', // Try to match my linux theme
     // 'hyperline',
-    'hyper-statusline',
     'hyperlinks',
     'hyper-tabs-enhanced', // high CPU usage
     'hyperterm-tabs',
-    // 'hypercwd',
-    'hyper-stylesheet',
+    'hypercwd',
+    'hyper-opacity',
+    'hyper-stylesheet'
   ],
 
   // in development, you can create a directory under
