@@ -8,6 +8,14 @@ $PSDefaultParameterValues["Out-File:Encoding"]="utf8" # Output files encoded wit
 Set-PSReadlineKEyHander -Chord Tab - Function MenuComplete # Bind tab key to show autocomplete menu
 
 ###################################
+# oh-my-posh
+###################################
+
+Import-Module posh-git
+Import-Module oh-my-posh
+Set-Theme Paradox
+
+###################################
 # Git
 ###################################
 function pull() {
