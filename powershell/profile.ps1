@@ -18,20 +18,47 @@ Set-Theme Paradox
 ###################################
 # Git
 ###################################
-function pull() {
-    & git pull $args
+
+function g {
+    git $args
 }
 
-function checkout() {
-    & git checkout $args
+function ga {
+    git add $args
 }
 
-# Re-add them
-del alias:gc -Force
-del alias:gp -Force
+function gaa {
+    git add . $args
+}
 
-Set-Alias -Name gc -Value checkout
-Set-Alias -Name gp -Value pull
+function gb {
+    git branch $args
+}
+
+function gc {
+    git commit -m $args
+}
+
+function gca {
+    git commit --amend
+}
+
+function gl {
+    git log
+}
+
+function gph {
+    git push $args
+}
+
+# Rebase only, merges are too messy :)
+function gpl {
+    git pull --rebase
+}
+
+function gs {
+    git show
+}
 
 ###################################
 # Functions
