@@ -96,3 +96,8 @@ function pkill($name) {
 function touch($file) {
     "" | Out-File $file -Encoding 'utf8'
 }
+
+
+function source() {
+    $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User") 
+}
