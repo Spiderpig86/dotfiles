@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/serbis/.oh-my-zsh
+export ZSH=/home/serbis/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -46,7 +46,6 @@ spwd() {
     echo
 }
 
-#POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_icon context dir)
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_icon context dir vcs)
 
 # Set list of themes to load
@@ -100,7 +99,8 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_icon context dir vcs)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   #git
-  zsh-autosuggestions
+  zsh-autosuggestions # Install this and following plugin using commands found at https://medium.com/@shivam1/make-your-terminal-beautiful-and-fast-with-zsh-shell-and-powerlevel10k-6484461c6efb
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
