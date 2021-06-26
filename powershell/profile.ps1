@@ -63,10 +63,6 @@ function gs {
 ###################################
 # Functions
 ###################################
-function reload-profile {
-    & $profile
-}
-
 function find-file {
     ls -recurse -filter "*$(name)*" -ErrorAction SilentlyContinue | foreach {
         $path = $_.directory
