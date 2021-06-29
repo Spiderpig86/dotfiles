@@ -60,6 +60,10 @@ function gs {
     git show
 }
 
+function gst {
+    git status
+}
+
 ###################################
 # Functions
 ###################################
