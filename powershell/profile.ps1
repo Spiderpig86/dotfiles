@@ -1,13 +1,6 @@
 # Sometimes you just wanna work in PowerShell instead
 
 ###################################
-# Quick Settings
-###################################
-$PSDefaultParameterValues["Out-File:Encoding"]="utf8" # Output files encoded with UTF-8
-
-Set-PSReadlineKEyHander -Chord Tab - Function MenuComplete # Bind tab key to show autocomplete menu
-
-###################################
 # oh-my-posh
 ###################################
 
@@ -64,6 +57,10 @@ function gst {
     git status
 }
 
+function gtree {
+    git log --graph --oneline
+}
+
 ###################################
 # Functions
 ###################################
@@ -96,7 +93,6 @@ function pkill($name) {
 function touch($file) {
     "" | Out-File $file -Encoding 'utf8'
 }
-
 
 function source() {
     $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User") 
