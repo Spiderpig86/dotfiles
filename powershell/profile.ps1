@@ -94,6 +94,21 @@ function touch($file) {
     "" | Out-File $file -Encoding 'utf8'
 }
 
+# Update path
 function source() {
     $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User") 
+}
+
+# Reload profile
+function reload-profile {
+    & $profile
+}
+
+# I miss using && in *nix systems
+# Usage: <command1>; aa <command2>
+function aa() {
+    if($?) {
+        $command = [string]::join(' ', $args[1..99])
+        & $args[0] $command
+    }
 }
