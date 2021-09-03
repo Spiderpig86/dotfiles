@@ -12,6 +12,10 @@ Set-Theme Paradox
 # Git
 ###################################
 
+# Delete conflicting aliases if desired
+If (Test-Path Alias:gc) {del alias:gc -Force}
+If (Test-Path Alias:gl) {del alias:gl -Force}
+
 function g {
     git $args
 }
