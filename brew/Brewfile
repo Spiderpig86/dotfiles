@@ -1,0 +1,29 @@
+# Automate Homebrew Setup using Homebrew/bundle
+
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+
+# Terminal
+brew "tmux"
+brew "vim"
+brew "zsh"
+brew "zsh-autosuggestions"
+brew "zsh-completions"
+brew "zsh-syntax-highlighting"
+cask "font-fantasque-sans-mono"
+cask "font-fantasquesansmono-nerd-font-mono"
+cask "font-jetbrains-mono"
+cask "font-jetbrainsmono-nerd-font"
+cask "font-jetbrainsmono-nerd-font-mono"
+
+# Dev
+brew "git"
+brew "python@3.9"
+brew "go"
+brew "node"
+brew "yarn"
+cask "visual-studio-code"
