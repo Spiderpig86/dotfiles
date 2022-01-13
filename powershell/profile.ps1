@@ -1,5 +1,8 @@
 # Sometimes you just wanna work in PowerShell instead
 
+# Use UTF-8
+[console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
+
 ###################################
 # oh-my-posh
 ###################################
@@ -7,6 +10,20 @@
 Import-Module posh-git
 Import-Module oh-my-posh
 Set-Theme Paradox
+
+###################################
+# Terminal Icons
+###################################
+
+Import-Module -Name Terminal-Icons
+
+###################################
+# PSReadLine
+###################################
+
+Set-PSReadLineKeyHandler -Chord 'Ctrl+d' -Function DeleteChar
+Set-PSReadLineKeyHandler -Key Tab -Function Complete
+Set-PSReadLineOption -PredictionSource History
 
 ###################################
 # Git
