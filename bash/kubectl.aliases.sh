@@ -60,7 +60,7 @@ alias kgd="kg deployment -o wide";
 #############
 # NAMESPACE #
 #############
-alias ksetns="kconfsc --namespace"; # Set namespace for all k8s commands
+alias ksetns="kconfsc --current --namespace"; # Set namespace for all k8s commands
 alias kgetns="kconfcc | grep namespace"; # Get namespace all k8s commands are using
 
 ########
