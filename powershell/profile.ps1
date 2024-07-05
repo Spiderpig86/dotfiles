@@ -9,7 +9,7 @@
 
 Import-Module posh-git
 Import-Module oh-my-posh
-Set-Theme Paradox
+Set-PoshPrompt Paradox # No longer Set-Theme https://github.com/microsoft/terminal/issues/9237
 
 ###################################
 # Terminal Icons
