@@ -1,4 +1,5 @@
 /* Combines some stylings from Material Gruvbox to less colorful themes */
+/* Works well with Dawn theme */
 
 :root {
     /* DEFAULTS */
@@ -230,7 +231,8 @@ body {
     width: 100%;
 }
 
-.view-content .cm-scroller {
+.view-content .cm-scroller,
+.markdown-preview-view {
     padding-top: calc(var(--header-height) + var(--header-height)) !important;
 }
 
