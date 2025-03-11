@@ -240,6 +240,10 @@ body {
     padding-top: 0 !important;
 }
 
+.view-header-title-container.mod-fade:not(.mod-at-end):after {
+    background: transparent;
+}
+
 /* Text */
 .cm-line .cm-strong {
     color: var(--bold-color) !important;
