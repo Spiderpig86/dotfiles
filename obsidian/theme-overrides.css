@@ -253,6 +253,12 @@ body {
     color: var(--italic-color) !important;
 }
 
+/* https://github.com/deathau/cm-typewriter-scroll-obsidian/issues/50 */
+table tr .cm-content.cm-lineWrapping {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
 /* Active line overrides */
 .cm-active.cm-line {
     background-color: rgba(255,255,255, 0.05) !important;
