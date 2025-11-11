@@ -215,8 +215,12 @@ body {
 /* Transparency for the UI */
 .prompt,
 .prompt .prompt-input {
-    backdrop-filter: blur(60px) saturate(210%);
-    background-color: rgb(from var(--background-primary) r g b / 75%);
+    /* backdrop-filter: blur(60px) saturate(210%);
+    background-color: rgb(from var(--background-primary) r g b / 75%); */
+}
+
+.modal-container.mod-dim {
+	backdrop-filter: blur(5px) saturate(210%);
 }
 
 .status-bar {
@@ -225,7 +229,7 @@ body {
 }
 
 .view-header {
-    backdrop-filter: blur(60px) saturate(210%);
+    backdrop-filter: blur(60px) saturate(120%);
     background-color: rgb(from var(--background-primary) r g b / 75%) !important;
     position: absolute;
     width: 100%;
