@@ -1,0 +1,40 @@
+// Zed settings
+{
+  "disable_ai": true,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+
+  "ui_font_family": ".ZedSans",
+  "autosave": "off",
+  "terminal": {
+    "font_family": ".ZedMono"
+  },
+  "icon_theme": "Catppuccin Frappé",
+  "base_keymap": "VSCode",
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": "Catppuccin Frappé (Blur) [Heavy]",
+  "format_on_save": "off",
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": false,
+    "selections_menu": false
+  },
+  "tabs": {
+    "file_icons": true
+  },
+
+  "hide_mouse": "on_typing_and_movement",
+  "cursor_shape": "underline",
+
+  // Tabs/Wrapping
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware"
+  },
+  "tab_size": 4,
+  "hard_tabs": false,
+  "wrap_guides": [120]
+}
