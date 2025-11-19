@@ -28,6 +28,9 @@
 
     "hide_mouse": "on_typing_and_movement",
     "cursor_shape": "underline",
+    "minimap": {
+        "show": "always"
+    },
 
     // Tabs/Wrapping
     "indent_guides": {
