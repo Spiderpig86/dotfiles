@@ -40,6 +40,7 @@
     "tab_size": 4,
     "hard_tabs": false,
     "wrap_guides": [120],
+    "soft_wrap": "editor_width",
 
     // Language specific
     "languages": {
