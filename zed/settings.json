@@ -1,11 +1,13 @@
 // Zed settings
 {
+    // Stuff I don't want
     "disable_ai": true,
     "telemetry": {
         "diagnostics": false,
         "metrics": false
     },
 
+    // UI
     "ui_font_family": ".ZedSans",
     "autosave": "off",
     "terminal": {
@@ -16,6 +18,9 @@
     "ui_font_size": 16,
     "buffer_font_size": 15,
     "theme": "Catppuccin Frappé (Blur) [Heavy]",
+    "experimental.theme_overrides": {
+        "editor.active_line.background": "#a5aecf36", // Add contrast for current line
+    },
     "format_on_save": "off",
     "toolbar": {
         "breadcrumbs": true,
@@ -25,12 +30,12 @@
     "tabs": {
         "file_icons": true
     },
-
-    "hide_mouse": "on_typing_and_movement",
-    "cursor_shape": "underline",
     "minimap": {
         "show": "always"
     },
+
+    "hide_mouse": "on_typing_and_movement",
+    "cursor_shape": "underline",
 
     // Tabs/Wrapping
     "indent_guides": {
@@ -45,9 +50,13 @@
     // Language specific
     "languages": {
         "Markdown": {
-            "show_completions_on_input": false,
-            "show_edit_predictions": false,
-            "show_completion_documentation": false
+            // "show_completions_on_input": false,
+            // "show_edit_predictions": false,
+            // "show_completion_documentation": false
+            "format_on_save": "off",
+            "completions": {
+                "words": "disabled"
+            }
         }
     }
 }
