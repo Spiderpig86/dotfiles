@@ -19,7 +19,23 @@
     "buffer_font_size": 15,
     "theme": "Catppuccin Frappé (Blur) [Heavy]",
     "experimental.theme_overrides": {
-        "editor.active_line.background": "#a5aecf36", // Add contrast for current line
+        // Catppuccin Frappé blur dark translucent overrides
+        // Ref: https://www.reddit.com/r/ZedEditor/comments/1dw4430/comment/njl0phw/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+        "status_bar.background": "#303446e0",
+        "title_bar.background": "#303446e0",
+        "elevated_surface.background": "#303446e0",
+        "editor.line_number": "#b5bfe299",
+        "editor.active_line_number": "#8caaee",
+        "editor.active_line.background": "#51576d40",
+
+        "border": "#73799440",
+
+        "scrollbar.thumb.background": "#8caaee20",
+
+        "ghost_element.hover": "#8caaee10",
+        "ghost_element.active": "#8caaee15",
+        "ghost_element.selected": "#8caaee20",
+        "element.hover": "#8caaee10",
     },
     "format_on_save": "off",
     "toolbar": {
