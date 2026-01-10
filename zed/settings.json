@@ -1,6 +1,6 @@
 // Zed settings
 {
-    // Stuff I don't want
+    // Stuff I don't want,
     "disable_ai": true,
     "telemetry": {
         "diagnostics": false,
@@ -62,6 +62,8 @@
     "hard_tabs": false,
     "wrap_guides": [120],
     "soft_wrap": "editor_width",
+    "remove_trailing_whitespace_on_save": true,
+    "show_whitespaces": "boundary",
 
     // Language specific
     "languages": {
