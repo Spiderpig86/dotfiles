@@ -68,6 +68,8 @@
     --faded-purple:      rgb(var(--faded-purple-x));
     --faded-aqua-x:      76,122,93;
     --faded-aqua:        rgb(var(--faded-aqua-x));
+
+    --darker-filter:     rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -201,6 +203,9 @@ body {
 
     /* --tab-text-color-focused-active:         var(--neutral-yellow);
     --tab-text-color-focused-active-current: var(--neutral-red); */
+
+    /* New Settings colors */
+    --setting-items-background:     var(--darker-filter);
 }
 
 /* Left sidebar */
