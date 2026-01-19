@@ -206,6 +206,10 @@ body {
 
     /* New Settings colors */
     --setting-items-background:     var(--darker-filter);
+
+    /* Fix left-gutter and dropdown arrow positioning for entries in left sidebar tree view */
+    --nav-item-children-padding-start: var(--size-4-5);
+    --nav-item-children-margin-start: calc(var(--size-4-1) * -1);
 }
 
 /* Left sidebar */
