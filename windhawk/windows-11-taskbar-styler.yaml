@@ -1,0 +1,10 @@
+theme: Luminosity_variant_Dock
+controlStyles:
+  - target: Grid#RootGrid
+    styles:
+      - Background:=<WindhawkBlur BlurAmount="30" TintColor="#4D000000" />
+styleConstants:
+  - ''
+resourceVariables:
+  - variableKey: ''
+    value: ''
