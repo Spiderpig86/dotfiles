@@ -281,3 +281,11 @@ table tr .cm-content.cm-lineWrapping {
     background-color: rgba(255,255,255, 0.1) !important;
     border-radius: 0;
 }
+
+/* Fix issue where border is set to 0.75x, that is not rendering */
+.community-modal-search-results-wrapper {
+    border-top: 1px solid rgb(255 255 255 / 5%);
+}
+.community-item {
+    border: 1px solid rgb(255 255 255 / 5%);
+}
