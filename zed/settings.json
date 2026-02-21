@@ -1,10 +1,28 @@
 // Zed settings
 {
-    // Stuff I don't want,
-    "disable_ai": true,
+    // Stuff I don't want
     "telemetry": {
         "diagnostics": false,
         "metrics": false
+    },
+
+    // AI AI AI
+    "disable_ai": false,
+    "agent": {
+        "default_profile": "ask",
+        "default_model": {
+            "provider": "copilot_chat",
+            "model": "claude-sonnet-4.5"
+        },
+        "favorite_models": [],
+        "model_parameters": []
+    },
+    "show_edit_predictions": false,
+    "edit_predictions": {
+        "copilot": {
+            "enable_next_edit_suggestions": false
+        },
+        "provider": "copilot"
     },
 
     // UI
@@ -56,7 +74,7 @@
     // Tabs/Wrapping
     "indent_guides": {
         "enabled": true,
-        "coloring": "indent_aware"
+        "coloring": "indent_aware",
     },
     "tab_size": 4,
     "hard_tabs": false,
