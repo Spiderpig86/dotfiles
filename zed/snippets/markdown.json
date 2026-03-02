@@ -1,0 +1,179 @@
+{
+  "Markdown Table (3x3)": {
+    "prefix": "table3",
+    "body": [
+      "| ${1:Header 1} | ${2:Header 2} | ${3:Header 3} |",
+      "| --- | --- | --- |",
+      "| ${4:Row 1 Col 1} | ${5:Row 1 Col 2} | ${6:Row 1 Col 3} |",
+      "| ${7:Row 2 Col 1} | ${8:Row 2 Col 2} | ${9:Row 2 Col 3} |"
+    ],
+    "description": "Insert a 3x3 Markdown table"
+  },
+
+  "Markdown Table (2 Columns)": {
+    "prefix": "table2",
+    "body": [
+      "| ${1:Column 1} | ${2:Column 2} |",
+      "| --- | --- |",
+      "| ${3:Row 1 Col 1} | ${4:Row 1 Col 2} |",
+      "| ${5:Row 2 Col 1} | ${6:Row 2 Col 2} |"
+    ],
+    "description": "Insert a 2-column Markdown table"
+  },
+
+  "Markdown Table (4 Columns)": {
+    "prefix": "table4",
+    "body": [
+      "| ${1:Col 1} | ${2:Col 2} | ${3:Col 3} | ${4:Col 4} |",
+      "| --- | --- | --- | --- |",
+      "| ${5:R1C1} | ${6:R1C2} | ${7:R1C3} | ${8:R1C4} |",
+      "| ${9:R2C1} | ${10:R2C2} | ${11:R2C3} | ${12:R2C4} |"
+    ],
+    "description": "Insert a 4-column Markdown table"
+  },
+
+  "Key-Value Table": {
+    "prefix": "kv",
+    "body": [
+      "| Key | Value |",
+      "| --- | ----- |",
+      "| ${1:Property} | ${2:Description} |",
+      "| ${3:Property} | ${4:Description} |",
+      "| ${5:Property} | ${6:Description} |"
+    ],
+    "description": "Structured key-value reference table"
+  },
+
+  "Callout Tip": {
+    "prefix": "tip",
+    "body": [
+      "> [!TIP]",
+      "> ${1:Helpful tip here}"
+    ],
+    "description": "Insert a TIP callout block"
+  },
+
+  "Callout Warning": {
+    "prefix": "warn",
+    "body": [
+      "> [!WARNING]",
+      "> ${1:Warning message here}"
+    ],
+    "description": "Insert a WARNING callout block"
+  },
+
+  "Callout Note": {
+    "prefix": "note",
+    "body": [
+      "> [!NOTE]",
+      "> ${1:Additional context or explanation}"
+    ],
+    "description": "Insert a NOTE callout block"
+  },
+
+  "Callout Important": {
+    "prefix": "important",
+    "body": [
+      "> [!IMPORTANT]",
+      "> ${1:Important information}"
+    ],
+    "description": "Insert an IMPORTANT callout"
+  },
+
+  "Code Block": {
+    "prefix": "code",
+    "body": [
+      "```$1",
+      "$2",
+      "```"
+    ],
+    "description": "Insert fenced code block"
+  },
+
+  "Inline Code": {
+    "prefix": "ic",
+    "body": [
+      "`$1`"
+    ],
+    "description": "Inline code snippet"
+  },
+
+  "Image Embed": {
+    "prefix": "img",
+    "body": [
+      "![${1:alt text}](${2:path/to/image.png})"
+    ],
+    "description": "Insert Markdown image"
+  },
+
+  "Link": {
+    "prefix": "link",
+    "body": [
+      "[${1:link text}](${2:https://example.com})"
+    ],
+    "description": "Insert Markdown link"
+  },
+
+  "Collapsible Section (Details Block)": {
+    "prefix": "details",
+    "body": [
+      "<details>",
+      "<summary>${1:Click to expand}</summary>",
+      "",
+      "${2:Hidden content}",
+      "",
+      "</details>"
+    ],
+    "description": "Insert collapsible details block"
+  },
+
+  "System Design Section": {
+    "prefix": "syssec",
+    "body": [
+      "## ${1:Component Name}",
+      "",
+      "### Responsibilities",
+      "- $2",
+      "",
+      "### APIs",
+      "- $3",
+      "",
+      "### Data Model",
+      "- $4",
+      "",
+      "### Scaling Considerations",
+      "- $5"
+    ],
+    "description": "Structured system design section"
+  },
+
+  "Pros / Cons Block": {
+    "prefix": "proscons",
+    "body": [
+      "### ✅ Pros",
+      "- $1",
+      "",
+      "### ❌ Cons",
+      "- $2"
+    ],
+    "description": "Pros and cons section"
+  },
+
+  "Checklist": {
+    "prefix": "check",
+    "body": [
+      "- [ ] $1",
+      "- [ ] $2",
+      "- [ ] $3"
+    ],
+    "description": "Insert checklist"
+  },
+
+  "Horizontal Divider": {
+    "prefix": "hr",
+    "body": [
+      "---"
+    ],
+    "description": "Horizontal rule"
+  }
+}
