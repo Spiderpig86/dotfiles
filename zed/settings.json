@@ -27,7 +27,11 @@
 
     // UI
     "ui_font_family": ".ZedSans",
-    "autosave": "off",
+    "autosave": {
+        "after_delay": {
+            "milliseconds": 1000,
+        },
+    },
     "terminal": {
         "font_family": ".ZedMono"
     },
