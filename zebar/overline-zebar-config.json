@@ -1,0 +1,160 @@
+{
+  "version": 1,
+  "app": {
+    "useAutoTiling": false,
+    "zebarWebsocketUri": "ws://localhost:6123",
+    "themes": [
+      {
+        "id": "default",
+        "name": "Default",
+        "colors": {
+          "--border": "#343b47",
+          "--background": "#1e2228",
+          "--background-deeper": "#090b0f",
+          "--button": "#353b45",
+          "--button-border": "#4e5663",
+          "--primary": "#5d7287",
+          "--primary-border": "#718aa3",
+          "--primary-text": "#edeef0",
+          "--text": "#edeef0",
+          "--text-muted": "#caced4",
+          "--icon": "#a9aeb8",
+          "--success": "#a3be8c",
+          "--danger": "#bf616a",
+          "--warning": "#d08770"
+        }
+      },
+      {
+        "id": "latte",
+        "name": "Latte",
+        "colors": {
+          "--border": "#bcc0cc",
+          "--background": "#eff1f5",
+          "--background-deeper": "#dce0e8",
+          "--button": "#acb0be",
+          "--button-border": "#bcc0cc",
+          "--primary": "#1e66f5",
+          "--primary-border": "#7287fd",
+          "--primary-text": "#eff1f5",
+          "--text": "#4c4f69",
+          "--text-muted": "#6c6f85",
+          "--icon": "#5c5f77",
+          "--success": "#40a02b",
+          "--danger": "#d20f39",
+          "--warning": "#df8e1d"
+        }
+      },
+      {
+        "id": "frappe",
+        "name": "Frappé",
+        "colors": {
+          "--border": "#51576d",
+          "--background": "#303446",
+          "--background-deeper": "#232634",
+          "--button": "#626880",
+          "--button-border": "#51576d",
+          "--primary": "#8caaee",
+          "--primary-border": "#babbf1",
+          "--primary-text": "#303446",
+          "--text": "#c6d0f5",
+          "--text-muted": "#a5adce",
+          "--icon": "#b5bfe2",
+          "--success": "#a6d189",
+          "--danger": "#e78284",
+          "--warning": "#e5c890"
+        }
+      },
+      {
+        "id": "macchiato",
+        "name": "Macchiato",
+        "colors": {
+          "--border": "#494d64",
+          "--background": "#24273a",
+          "--background-deeper": "#181926",
+          "--button": "#5b6078",
+          "--button-border": "#494d64",
+          "--primary": "#8aadf4",
+          "--primary-border": "#b7bdf8",
+          "--primary-text": "#24273a",
+          "--text": "#cad3f5",
+          "--text-muted": "#a5adcb",
+          "--icon": "#b8c0e0",
+          "--success": "#a6da95",
+          "--danger": "#ed8796",
+          "--warning": "#eed49f"
+        }
+      },
+      {
+        "id": "mocha",
+        "name": "Mocha",
+        "colors": {
+          "--border": "#45475a",
+          "--background": "#1e1e2e",
+          "--background-deeper": "#11111b",
+          "--button": "#45475a",
+          "--button-border": "#45475a",
+          "--primary": "#cba6f7",
+          "--primary-border": "#b4befe",
+          "--primary-text": "#1e1e2e",
+          "--text": "#cdd6f4",
+          "--text-muted": "#a6adc8",
+          "--icon": "#bac2de",
+          "--success": "#a6e3a1",
+          "--danger": "#f38ba8",
+          "--warning": "#f9e2af"
+        }
+      }
+    ],
+    "currentThemeId": "mocha",
+    "radius": "0.25rem"
+  },
+  "widgets": {
+    "main": {
+      "flowLauncherPath": "",
+      "mediaMaxWidth": "400",
+      "weatherThresholds": [
+        {
+          "id": "weather-1",
+          "min": -10,
+          "max": 0,
+          "labelColor": "--danger"
+        },
+        {
+          "id": "weather-2",
+          "min": 1,
+          "max": 15,
+          "labelColor": "--text"
+        },
+        {
+          "id": "weather-3",
+          "min": 16,
+          "max": 25,
+          "labelColor": "--warning"
+        },
+        {
+          "id": "weather-4",
+          "min": 26,
+          "max": 35,
+          "labelColor": "--danger"
+        }
+      ],
+      "pinnedSystrayIcons": [],
+      "weatherUnit": "fahrenheit",
+      "dynamicWorkspaceIndicator": false,
+      "marginX": 0,
+      "paddingLeft": 4,
+      "paddingRight": 4,
+      "timeFormat": "EEE d MMM t",
+      "timeLocale": "en-US",
+      "providers": {
+        "cpu": true,
+        "memory": true,
+        "weather": true,
+        "battery": true
+      }
+    },
+    "script-launcher": {
+      "applications": []
+    }
+  }
+}
