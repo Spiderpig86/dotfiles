@@ -1,28 +1,42 @@
 // Zed settings
 {
     // Stuff I don't want
+    "project_panel": {
+        "dock": "left"
+    },
+    "outline_panel": {
+        "dock": "left"
+    },
+    "collaboration_panel": {
+        "dock": "left"
+    },
+    "git_panel": {
+        "dock": "left"
+    },
     "telemetry": {
         "diagnostics": false,
-        "metrics": false
+        "metrics": false,
     },
 
     // AI AI AI
-    "disable_ai": false,
+    "disable_ai": true,
     "agent": {
+        "sidebar_side": "right",
+        "dock": "right",
         "default_profile": "ask",
         "default_model": {
             "provider": "copilot_chat",
-            "model": "claude-sonnet-4.5"
+            "model": "claude-opus-4.6",
         },
         "favorite_models": [],
-        "model_parameters": []
+        "model_parameters": [],
     },
     "show_edit_predictions": false,
     "edit_predictions": {
         "copilot": {
-            "enable_next_edit_suggestions": false
+            "enable_next_edit_suggestions": false,
         },
-        "provider": "copilot"
+        "provider": "copilot",
     },
 
     // UI
@@ -32,14 +46,23 @@
             "milliseconds": 1000,
         },
     },
+
     "terminal": {
-        "font_family": ".ZedMono"
+        "font_family": ".ZedMono",
     },
-    "icon_theme": "Catppuccin Frappé",
+    "icon_theme": {
+        "mode": "dark",
+        "light": "Catppuccin Frappé",
+        "dark": "Catppuccin Frappé"
+    },
     "base_keymap": "VSCode",
     "ui_font_size": 16,
     "buffer_font_size": 15,
-    "theme": "Catppuccin Frappé (Blur) [Heavy]",
+    "theme": {
+        "mode": "dark",
+        "light": "One Light",
+        "dark": "Catppuccin Frappé (Blur) [Heavy]"
+    },
     "theme_overrides": {
         "Catppuccin Frappé (Blur) [Heavy]": {
             // Catppuccin Frappé blur dark translucent overrides
@@ -65,16 +88,16 @@
     "toolbar": {
         "breadcrumbs": true,
         "quick_actions": false,
-        "selections_menu": false
+        "selections_menu": false,
     },
     "tabs": {
-        "file_icons": true
+        "file_icons": true,
     },
     "minimap": {
-        "show": "always"
+        "show": "always",
     },
 
-    "hide_mouse": "on_typing_and_movement",
+    "hide_mouse": "on_typing_and_action",
     "cursor_shape": "underline",
 
     // Tabs/Wrapping
@@ -97,8 +120,11 @@
             // "show_completion_documentation": false
             "format_on_save": "off",
             "completions": {
-                "words": "disabled"
-            }
-        }
-    }
+                "words": "disabled",
+            },
+        },
+        "Go": {
+            "format_on_save": "on",
+        },
+    },
 }
