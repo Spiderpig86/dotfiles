@@ -1,17 +1,20 @@
 // Zed settings
 {
     // Stuff I don't want
+    "cli_default_open_behavior": "existing_window",
     "project_panel": {
-        "dock": "left"
+        "dock": "left",
+        "starts_open": false,
+        "hide_root": true,
     },
     "outline_panel": {
-        "dock": "left"
+        "dock": "left",
     },
     "collaboration_panel": {
-        "dock": "left"
+        "dock": "left",
     },
     "git_panel": {
-        "dock": "left"
+        "dock": "left",
     },
     "telemetry": {
         "diagnostics": false,
@@ -53,7 +56,7 @@
     "icon_theme": {
         "mode": "dark",
         "light": "Catppuccin Frappé",
-        "dark": "Catppuccin Frappé"
+        "dark": "Base Charmed Icons",
     },
     "base_keymap": "VSCode",
     "ui_font_size": 16,
@@ -61,7 +64,7 @@
     "theme": {
         "mode": "dark",
         "light": "One Light",
-        "dark": "Catppuccin Frappé (Blur) [Heavy]"
+        "dark": "Aura Dark (Soft Text)",
     },
     "theme_overrides": {
         "Catppuccin Frappé (Blur) [Heavy]": {
@@ -82,8 +85,41 @@
             "ghost_element.active": "#8caaee15",
             "ghost_element.selected": "#8caaee20",
             "element.hover": "#8caaee10",
-        }
+        },
+        "Aura Dark (Soft Text)": {
+            "editor.document_highlight.read_background": "#00000000",
+            "editor.document_highlight.write_background": "#00000000",
+            "border.variant": "#15141C",
+            "border": "#15141C",
+            "title_bar.background": "#15141C",
+            "panel.background": "#15141C",
+            "panel.focused_border": "#4E466E",
+            "players": [
+                {
+                    "cursor": "#BD9DFF",
+                },
+            ],
+            "syntax": {
+                "comment": {
+                    "font_style": "italic",
+                },
+                "comment.doc": {
+                    "font_style": "italic",
+                },
+            },
+        },
     },
+    "title_bar": {
+        "show_onboarding_banner": false,
+        "show_branch_name": false,
+        "show_project_items": false,
+        "show_user_menu": false,
+        "show_sign_in": false,
+    },
+    "tab_bar": {
+        "show": false,
+    },
+
     "format_on_save": "off",
     "toolbar": {
         "breadcrumbs": true,
@@ -98,7 +134,15 @@
     },
 
     "hide_mouse": "on_typing_and_action",
-    "cursor_shape": "underline",
+    "cursor_shape": "block",
+    "scrollbar": {
+        "show": "never",
+    },
+    "gutter": {
+        "min_line_number_digits": 0,
+        "folds": false,
+        "runnables": false,
+    },
 
     // Tabs/Wrapping
     "indent_guides": {
@@ -110,7 +154,7 @@
     "wrap_guides": [120],
     "soft_wrap": "editor_width",
     "remove_trailing_whitespace_on_save": true,
-    "show_whitespaces": "boundary",
+    "show_whitespaces": "selection",
 
     // Language specific
     "languages": {
