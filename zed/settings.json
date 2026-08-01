@@ -92,7 +92,7 @@
             "border.variant": "#15141C",
             "border": "#a394f033", // Needed for Mermaid arrows
             "title_bar.background": "#15141C",
-            "panel.background": "#15141C",
+            // "panel.background": "#15141C", // Needed for Mermaid group display
             "panel.focused_border": "#4E466E",
             "players": [
                 {
