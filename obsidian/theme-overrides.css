@@ -70,6 +70,8 @@
     --faded-aqua:        rgb(var(--faded-aqua-x));
 
     --darker-filter:     rgba(0, 0, 0, 0.1);
+
+    --rule-height: 1.65rem;
 }
 
 body {
@@ -210,6 +212,10 @@ body {
     /* Fix left-gutter and dropdown arrow positioning for entries in left sidebar tree view */
     --nav-item-children-padding-start: var(--size-4-5);
     --nav-item-children-margin-start: calc(var(--size-4-1) * -1);
+
+    /* New update made border light for some reason */
+    --prompt-border-color: var(--color-base-10);
+    --background-primary-alt: var(--color-base-20);
 }
 
 /* Left sidebar */
@@ -288,4 +294,19 @@ table tr .cm-content.cm-lineWrapping {
 }
 .community-item {
     border: 1px solid rgb(255 255 255 / 5%);
+}
+
+/* Fixes to new theme updates that don't make sense */
+.markdown-source-view.mod-cm6 .cm-line {
+    background-image: none;
+}
+
+.nav-folder-children .tree-item-icon.collapse-icon {
+    background: none;
+    box-shadow: none;
+}
+
+.markdown-source-view.mod-cm6 table, .markdown-rendered table {
+    /* Table widths got messed up */
+    width: auto;
 }
