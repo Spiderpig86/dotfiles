@@ -297,7 +297,7 @@ table tr .cm-content.cm-lineWrapping {
 }
 
 /* Fixes to new theme updates that don't make sense */
-.markdown-source-view.mod-cm6 .cm-line {
+.markdown-source-view.mod-cm6 .cm-line:not(.hr) {
     background-image: none;
 }
 
