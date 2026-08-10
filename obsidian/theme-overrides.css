@@ -310,3 +310,8 @@ table tr .cm-content.cm-lineWrapping {
     /* Table widths got messed up */
     width: auto;
 }
+
+.setting-group .setting-group-search {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
