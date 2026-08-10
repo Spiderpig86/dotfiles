@@ -8,7 +8,7 @@
     --yasb-bar-bg: rgba(36, 36, 36, 0.25);
     --yasb-surface-alt: rgb(61, 61, 61);
     --yasb-bar-border: #303030;
-    --yasb-popup-bg: rgba(36, 36, 36, 0.25);
+    --yasb-popup-bg: rgba(36, 36, 36, 0.75);
     --yasb-dialog-bg: rgb(43, 43, 43);
     --yasb-dialog-surface: rgb(32, 32, 32);
     --yasb-white-alpha-03: rgba(255, 255, 255, 0.03);
@@ -24,7 +24,7 @@
     --yasb-white-alpha-40: rgba(255, 255, 255, 0.4);
     --yasb-white-alpha-70: rgba(255, 255, 255, 0.7);
     --yasb-white-alpha-80: rgba(255, 255, 255, 0.8);
-    --yasb-white-alpha-85: rgba(255, 255, 255, 0.25);
+    --yasb-white-alpha-85: rgba(255, 255, 255, 0.85);
     --yasb-fg: rgba(255, 255, 255, 0.9);
     --yasb-fg-muted: rgb(134, 134, 134);
     --yasb-icon-fg: rgba(255, 255, 255, 0.9);
@@ -964,7 +964,7 @@
 .media-menu {
     min-width: 440px;
     max-width: 440px;
-    background-color: rgba(31, 39, 49, 0.5);
+    background-color: rgba(31, 39, 49, 0.75);
 }
 .media-menu .title,
 .media-menu .artist,
