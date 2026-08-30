@@ -317,6 +317,6 @@ table tr .cm-content.cm-lineWrapping {
 }
 
 /* Transparent window controls for distraction free mode with Distraction Free Writing plugin */
-.is-hidden-frameless:not(.is-fullscreen).is-focused:not(.distraction-free-mode) .titlebar-button-container.mod-right {
-    background-color: var(--titlebar-background-focused);
+.is-hidden-frameless.distraction-free-mode.mod-windows .titlebar-button-container.mod-right {
+    background-color: transparent;
 }
