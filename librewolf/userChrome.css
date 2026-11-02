@@ -606,7 +606,24 @@ toolbarseparator.proton-zap::before {
        where the theme's popup colour lives (or the [lwtheme] fallback
        below). */
     --panel-background-color: inherit !important;
+    color: inherit !important;
+
   }
+}
+
+/* Overrides for Adaptive Tab Bar Color https://addons.mozilla.org/en-US/firefox/addon/adaptive-tab-bar-colour/*/
+menu, menuitem {
+    /* Overwritten for FoxOne */
+    --panel-text-color: var(--toolbox-text-color-inactive) !important;
+    color: var(--toolbox-text-color-inactive);
+
+    &:where([disabled]) {
+        --menu-icon-fill: color-mix(in srgb, var(--panel-text-color) 40%, transparent) !important;
+        --text-color-disabled: color-mix(in srgb, var(--panel-text-color) 40%, transparent) !important;
+    }
+}
+menupopup {
+    --menuitem-icon-fill: var(--toolbox-text-color-inactive);
 }
 
 /* Context-menu item hover. Toolkit paints it with the -moz-menuhover
