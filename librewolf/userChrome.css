@@ -152,7 +152,7 @@
   --whole-words-position:      3;
 
   /* Tab loading progress bar (1 = show, 0 = hide) */
-  --uc-show-loading-progress: 0;
+  --uc-show-loading-progress: 1;
 
   /* Navigation buttons – auto-hide with hover reveal (0 = always show, 1 = reveal with hover and focus, 2 = reveal with hover) */
   --uc-autohide-nav-buttons: 0;
@@ -605,7 +605,8 @@ toolbarseparator.proton-zap::before {
        `inherit` skips the element-level junk and resolves from :root,
        where the theme's popup colour lives (or the [lwtheme] fallback
        below). */
-    --panel-background-color: inherit !important;
+    /*--panel-background-color: inherit !important;*/
+    --panel-background-color: color-mix(in srgb, var(--lwt-accent-color), transparent 5%) !important;
     color: inherit !important;
 
   }
