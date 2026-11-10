@@ -320,3 +320,8 @@ table tr .cm-content.cm-lineWrapping {
 .is-hidden-frameless.distraction-free-mode.mod-windows .titlebar-button-container.mod-right {
     background-color: transparent;
 }
+
+/* Shift padding for inline terminal */
+[data-type="terminal:terminal"] .view-content.node-insert-event {
+    padding-top: 3rem;
+}
