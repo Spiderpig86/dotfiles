@@ -136,7 +136,7 @@
     "hide_mouse": "on_typing_and_action",
     "cursor_shape": "block",
     "scrollbar": {
-        "show": "never",
+        "show": "auto",
     },
     "gutter": {
         "min_line_number_digits": 0,
