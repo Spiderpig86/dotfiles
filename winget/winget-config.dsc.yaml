@@ -3,6 +3,41 @@
 properties:
   configurationVersion: 0.2.0
   resources:
+    # --- Windows settings ---
+    - resource: Microsoft.Windows.Developer/DeveloperMode
+      id: developer-mode
+      directives:
+        description: Enable Developer Mode
+        module: Microsoft.Windows.Developer
+        allowPrerelease: true
+      settings:
+        Ensure: Present
+    - resource: Microsoft.Windows.Developer/EnableDarkMode
+      id: dark-mode
+      directives:
+        description: Enable dark mode for apps and Windows
+        module: Microsoft.Windows.Developer
+        allowPrerelease: true
+      settings:
+        Ensure: Present
+        RestartExplorer: true
+    - resource: Microsoft.Windows.Developer/WindowsExplorer
+      id: explorer-settings
+      directives:
+        description: Show file extensions and hidden files
+        module: Microsoft.Windows.Developer
+        allowPrerelease: true
+      settings:
+        FileExtensions: Show
+        HiddenFiles: Show
+        RestartExplorer: true
+    - resource: PSDscResources/WindowsOptionalFeature
+      id: virtual-machine-platform
+      directives:
+        description: Enable Virtual Machine Platform (needed by WSL 2 and Docker Desktop)
+      settings:
+        Name: VirtualMachinePlatform
+        Ensure: Present
     # --- Dev ---
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: git-git

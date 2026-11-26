@@ -24,12 +24,19 @@ winget configure -f https://raw.githubusercontent.com/Spiderpig86/dotfiles/maste
 
 | Group | Packages |
 |---|---|
+| Windows settings | Developer Mode, dark mode, show file extensions and hidden files, Virtual Machine Platform |
 | Dev | Git, Git LFS, Go, Yarn, Node.js LTS, uv, Docker Desktop, WSL, Zed |
 | Terminal | Windows Terminal, Oh My Posh, Fastfetch |
 | Window manager / bar | GlazeWM, YASB, Windhawk |
 | Browsers | LibreWolf, Helium |
 | Apps | Obsidian, Notepad++, Claude, Notion, Spotify, 7-Zip, ScreenToGif |
 | System | PC Health Check |
+
+## Notes on the Windows settings
+
+- They come from the `Microsoft.Windows.Developer` DSC module, which is published as a prerelease (`allowPrerelease: true` in the YAML), and from `PSDscResources`. Both are downloaded from the PowerShell Gallery on first run.
+- Enabling Developer Mode and Virtual Machine Platform needs an elevated terminal, and Virtual Machine Platform needs a reboot before WSL 2 and Docker work.
+- Explorer restarts (`RestartExplorer: true`) when the dark mode and Explorer settings are applied, so the taskbar flickers once.
 
 ## After installing
 
