@@ -171,4 +171,9 @@
             "format_on_save": "on",
         },
     },
+
+    // Faster autocomplete menus
+    "show_completions_on_input": true,
+    "show_completion_documentation": false,
+    "snippet_sort_order": "top",
 }
