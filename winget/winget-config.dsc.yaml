@@ -1,0 +1,186 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+# Apply with: winget configure -f winget-config.dsc.yaml
+properties:
+  configurationVersion: 0.2.0
+  resources:
+    # --- Dev ---
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: git-git
+      directives:
+        description: Install Git.Git
+      settings:
+        id: Git.Git
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: github-gitlfs
+      directives:
+        description: Install GitHub.GitLFS
+      settings:
+        id: GitHub.GitLFS
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: golang-go
+      directives:
+        description: Install GoLang.Go
+      settings:
+        id: GoLang.Go
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: yarn-yarn
+      directives:
+        description: Install Yarn.Yarn
+      settings:
+        id: Yarn.Yarn
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: openjs-nodejs-lts
+      directives:
+        description: Install OpenJS.NodeJS.LTS
+      settings:
+        id: OpenJS.NodeJS.LTS
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: astral-sh-uv
+      directives:
+        description: Install astral-sh.uv
+      settings:
+        id: astral-sh.uv
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: docker-dockerdesktop
+      directives:
+        description: Install Docker.DockerDesktop
+      settings:
+        id: Docker.DockerDesktop
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: microsoft-wsl
+      directives:
+        description: Install Microsoft.WSL
+      settings:
+        id: Microsoft.WSL
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: zedindustries-zed
+      directives:
+        description: Install ZedIndustries.Zed
+      settings:
+        id: ZedIndustries.Zed
+        source: winget
+    # --- Terminal ---
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: microsoft-windowsterminal
+      directives:
+        description: Install Microsoft.WindowsTerminal
+      settings:
+        id: Microsoft.WindowsTerminal
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: jandedobbeleer-ohmyposh
+      directives:
+        description: Install JanDeDobbeleer.OhMyPosh
+      settings:
+        id: JanDeDobbeleer.OhMyPosh
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: fastfetch-cli-fastfetch
+      directives:
+        description: Install Fastfetch-cli.Fastfetch
+      settings:
+        id: Fastfetch-cli.Fastfetch
+        source: winget
+    # --- Window manager and bar ---
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: glzr-io-glazewm
+      directives:
+        description: Install glzr-io.glazewm
+      settings:
+        id: glzr-io.glazewm
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: amn-yasb
+      directives:
+        description: Install AmN.yasb
+      settings:
+        id: AmN.yasb
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: ramensoftware-windhawk
+      directives:
+        description: Install RamenSoftware.Windhawk
+      settings:
+        id: RamenSoftware.Windhawk
+        source: winget
+    # --- Browsers ---
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: librewolf-librewolf
+      directives:
+        description: Install LibreWolf.LibreWolf
+      settings:
+        id: LibreWolf.LibreWolf
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: imputnet-helium
+      directives:
+        description: Install ImputNet.Helium
+      settings:
+        id: ImputNet.Helium
+        source: winget
+    # --- Apps ---
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: obsidian-obsidian
+      directives:
+        description: Install Obsidian.Obsidian
+      settings:
+        id: Obsidian.Obsidian
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: notepad-notepad
+      directives:
+        description: Install Notepad++.Notepad++
+      settings:
+        id: Notepad++.Notepad++
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: anthropic-claude
+      directives:
+        description: Install Anthropic.Claude
+      settings:
+        id: Anthropic.Claude
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: notion-notion
+      directives:
+        description: Install Notion.Notion
+      settings:
+        id: Notion.Notion
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: spotify-spotify
+      directives:
+        description: Install Spotify.Spotify
+      settings:
+        id: Spotify.Spotify
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: 7zip-7zip
+      directives:
+        description: Install 7zip.7zip
+      settings:
+        id: 7zip.7zip
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: nickemanarin-screentogif
+      directives:
+        description: Install NickeManarin.ScreenToGif
+      settings:
+        id: NickeManarin.ScreenToGif
+        source: winget
+    # --- System ---
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: microsoft-windowspchealthcheck
+      directives:
+        description: Install Microsoft.WindowsPCHealthCheck
+      settings:
+        id: Microsoft.WindowsPCHealthCheck
+        source: winget
