@@ -1,10 +1,14 @@
 theme: Luminosity_variant_Dock
+styleConstants:
+  - ''
 controlStyles:
   - target: Grid#RootGrid
     styles:
-      - Background:=<WindhawkBlur BlurAmount="30" TintColor="#4D000000" />
-styleConstants:
+      - ''
+themeResourceVariables:
   - ''
+clickThroughTaskbar: 0
+xamlDiagnosticsHandling: alert
 resourceVariables:
   - variableKey: ''
     value: ''
